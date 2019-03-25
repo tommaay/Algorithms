@@ -1,11 +1,5 @@
 #!/usr/bin/python
 
-# - Find the max profit by getting the biggest difference in prices
-# must buy before selling so cannot justt use min and max
-# - Find max price then split the array to the left of that point
-# - Find the min of the array to the left and that min to the max should
-# be the biggest profit for the left side of the list
-# - Repeat for the right array and so on
 
 import argparse
 
