@@ -7,17 +7,14 @@ import argparse
 def find_max_profit(prices):
     reversed_list = list(reversed(prices))
     profit = 00
-    print(reversed_list)
     for i, num in enumerate(reversed_list):
         right_list = reversed_list[i+1:]
         idx2 = 0
         while idx2 < len(right_list):
             num2 = right_list[idx2]
             diff = num - num2
-
             if diff > profit or profit == 00:
                 profit = diff
-
             idx2 += 1
     return profit
 
